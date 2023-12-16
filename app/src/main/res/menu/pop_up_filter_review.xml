@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_date"
+        android:title="@string/date" />
+    <item
+        android:id="@+id/menu_rating"
+        android:title="@string/ttl_rating" />
+    <item
+        android:id="@+id/menu_likes"
+        android:title="@string/likes" />
+    <item
+        android:id="@+id/menu_dislikes"
+        android:title="@string/dislikes" />
+</menu>

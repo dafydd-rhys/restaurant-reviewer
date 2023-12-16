@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="24dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/baseline_arrow_back_ios_new_24"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/go_back">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/opening_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/badges"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"
+        android:orientation="horizontal"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:textSize="33sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/background_white"
+        android:elevation="3dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/review_badge"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/write_25_reviews"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="RtlCompat" />
+
+            <ProgressBar
+                android:id="@+id/reviewProgress"
+                android:layout_gravity="center_vertical"
+                style="@android:style/Widget.Material.ProgressBar.Horizontal"
+                android:layout_width="70dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content"
+                android:progress="70"
+                android:progressTint="@color/primary"
+                >
+            </ProgressBar>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/likes_badge"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/receive_100_likes"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="RtlCompat" />
+
+            <ProgressBar
+                android:id="@+id/likesProgress"
+                android:layout_gravity="center_vertical"
+                style="@android:style/Widget.Material.ProgressBar.Horizontal"
+                android:layout_width="70dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content"
+                android:progress="40"
+                android:progressTint="@color/primary"
+                >
+            </ProgressBar>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/followers_badge"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/get_100_followers"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="RtlCompat" />
+
+            <ProgressBar
+                android:id="@+id/followersProgress"
+                android:layout_gravity="center_vertical"
+                style="@android:style/Widget.Material.ProgressBar.Horizontal"
+                android:layout_width="70dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content"
+                android:progress="100"
+                android:progressTint="@color/primary"
+                >
+            </ProgressBar>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/badge_all"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/unlock_all_badges"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="RtlCompat" />
+
+            <ProgressBar
+                android:id="@+id/badgeProgress"
+                android:layout_gravity="center_vertical"
+                style="@android:style/Widget.Material.ProgressBar.Horizontal"
+                android:layout_width="70dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content"
+                android:progress="0"
+                android:progressTint="@color/primary"
+                >
+            </ProgressBar>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

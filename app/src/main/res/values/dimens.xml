@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="normal_large_title">32sp</dimen>
+    <dimen name="normal_medium_title">16sp</dimen>
+    <dimen name="normal">14sp</dimen>
+</resources>

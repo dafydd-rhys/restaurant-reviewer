@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1083029647564",
+    "project_id": "mobileapps-cw3",
+    "storage_bucket": "mobileapps-cw3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083029647564:android:83b3d9e45d708ffea9d269",
+        "android_client_info": {
+          "package_name": "com.example.mobileapps_cw3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgUYHNln8wDcJjGi_KHFTpIDv7WEEL6SY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
